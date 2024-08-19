@@ -69,18 +69,15 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Henry Wu.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Canberra based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently studying
+        at <strong className="text-stone-100">Australian National University</strong> as a master student.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I'm passionate in full stack development, machine learning and game development.
       </p>
     </>
   ),
@@ -108,12 +105,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Canberra, Australia', Icon: MapIcon },
+    { label: 'Age', text: '24', Icon: CalendarIcon },
+    // { label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon },
+    { label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon },
+    { label: 'Study', text: 'Australian National University', Icon: AcademicCapIcon },
+    // { label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -125,17 +122,17 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Chinese',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'English',
+        level: 7,
       },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      // {
+      //   name: 'Spanish',
+      //   level: 3,
+      // },
     ],
   },
   {
@@ -143,14 +140,14 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
+        level: 8,
+      },
+      {
+        name: 'Vue',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
+        name: 'TypeScript',
         level: 6,
       },
     ],
@@ -159,16 +156,16 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Spring MVC',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Node.js',
+        level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Django',
+        level: 5,
       },
     ],
   },
@@ -176,16 +173,16 @@ export const skills: SkillGroup[] = [
     name: 'Mobile development',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
-      },
-      {
         name: 'Flutter',
-        level: 4,
+        level: 6,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Andriod-Java',
+        level: 7,
+      },
+      {
+        name: 'Unity',
+        level: 6,
       },
     ],
   },
@@ -268,40 +265,51 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Feb 2024 – Present',
+    location: 'Australian National University',
+    title: 'Masters of Computing',
+    content: <>
+      <p>• Courses: Structured Programming, Web Development and Design, Introduction to Machine Learning, Software
+        Construction</p>
+      <p>• GPA: 6.5/7.0</p>
+    </>
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Sep 2018 – June 2022',
+    location: 'Beijing University of Technology',
+    title: 'Bachelor of Information Technology',
+    content: <>
+      <p>• Courses: Data Structures and Algorithms, Principles of Database System, Principle of Operating System,
+        Network Protocol Analysis, Information Security Architecture
+      </p>
+      <p>
+        • Acquired a solid foundation in computer science. Have a deep understanding of object-oriented programming,
+        data structure and algorithms.
+      </p>
+    </>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Feb 2021 – Febr 2022',
+    location: 'China Electronic Systems Engineering Corp',
+    title: 'Front-end Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+        <p>
+          • Developed more than 20 applications with Vue and component libraries including Vant and Element Plus. Use
+          Apache ECharts to illustrate data intuitively.
+        </p>
+        <p>
+          • Collaborated with project managers, test engineers and UI designers to build large-scale applications. Proficient
+          in using team collaboration tools such as Canva, Postman, Git and ZenTao.
+        </p>
+        <p>
+          • Developed reusable components to improve development efficiency. Built a tool to generate TypeSript interfaces
+          from documentation.
+        </p>
+      </>
     ),
   },
 ];
@@ -365,9 +373,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];
